@@ -1,0 +1,23 @@
+{
+  "name": "personalized-learning-analytics-system",
+  "version": "1.0.0",
+  "description": "A NoSQL (MongoDB) based Personalized Learning Analytics System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node seed/seed.js",
+    "benchmark": "node seed/benchmark.js",
+    "concurrency": "node seed/concurrency_test.js",
+    "export": "node seed/export.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
